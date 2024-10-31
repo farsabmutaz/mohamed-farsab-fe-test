@@ -1,89 +1,36 @@
-# Frontend Coding Challenge
-
-## Welcome! :tada:
-
-Thank you for taking the time to participate in our coding challenge! This exercise will help us understand your approach to building modern web applications with an emphasis on code quality and best practices.
-
-## The Assignment
-
-Create a marketplace application that allows users to browse and search through products. You'll be implementing the frontend interface using Next.js 14, TypeScript, and SCSS modules.
-
-We are looking for a system design implementation that showcases a deep understanding of how to write modular and scalable codebases.
-
-This includes:
-
-- Effective use of component-based architecture
-- Thoughtful state management and data fetching strategies using app router
-- Clean, readable, and maintainable code
-- Efficient use of Next.js 14 features
-- Proper use of TypeScript for type safety and SCSS modules for styling
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
-1. Fork this repository
+First, run the development server:
 
-   ```bash
-   # Click "Fork" in the top right
-   # Rename your fork to: firstname-lastname-fe-challenge
-   # Example: john-doe-fe-challenge
-   ```
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-2. Clone your forked repository:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-   ```bash
-   git clone git@github.com:your-username/firstname-lastname-fe-challenge.git
-   cd firstname-lastname-fe-challenge
-   ```
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-3. Create your working branch:
-   ```bash
-   git checkout -b feature/marketplace
-   ```
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Requirements
+## Learn More
 
-- Use Next.js 14 with the App Router
-- Implement URL state management
-- Write code to ESLint and Prettier basic standards
-- Implement the provided designs (you'll receive these separately)
-- Write the code in TypeScript
-- Style the application using SCSS modules
+To learn more about Next.js, take a look at the following resources:
 
-## What We Will Be Looking For
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-- Code Structure: How you organize your code, including the division of components and modules
-- Next.js 14 and TypeScript: Effective use of Next.js features such as App Router, SSR, and TypeScript for type safety
-- SCSS Modules: Proper use of SCSS modules for styling, ensuring modular and maintainable CSS
-- State Management: How you manage state, especially URL state management for filters
-- Data Fetching: Efficient and clean data fetching strategies
-- Performance and Scalability: Considerations for building a scalable and performant codebase
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deliverables
+## Deploy on Vercel
 
-Once you have completed the assignment:
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-1. Push your changes to your branch
-
-2. Submit Your Work:
-   - Email with your GitHub repository link
-   - Include any additional notes or considerations you'd like to share
-
-## Logistics
-
-- Aim to spend no more than a few hours on the assignment
-- It's okay if it's not fully complete or polished
-- If you have questions, please reach out via email
-
-## FAQs
-
-- **What if I have questions about what the ideal product behavior should be?**  
-  Feel free to make product assumptions that you think will make for a good user experience while keeping the technical complexity within reason.
-
-- **Can I change which frameworks are used or the tech stack?**  
-  Please use the tech stack specified (Next.js 14, TypeScript, SCSS modules).
-
-- **Can I change the design?**  
-  Please implement the design as provided in the specifications you'll receive.
-
-- **Can I leverage and import useful modules as necessary?**  
-  Yes, you can use utility modules like Day.js and Lodash. However, avoid using major UI libraries like Material-UI.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

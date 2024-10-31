@@ -1,0 +1,80 @@
+// app/components/GetPaidBanner.module.scss
+
+.banner {
+    background-image: url('/get-paid-same-day-bg.png');
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+    overflow: hidden;
+  
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
+      width: 100%;
+      padding: 0 20px;
+  
+      @media (max-width: 768px) {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        gap: 1.5rem;
+      }
+    }
+  
+    .leftIcon {
+      width: 150px;
+      height: auto;
+      flex-shrink: 0;
+  
+      @media (max-width: 768px) {
+        width: 100px; /* Adjust width on smaller screens */
+      }
+    }
+  
+    .textContainer {
+      text-align: center;
+      color: #fff;
+      max-width: 600px;
+  
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 0;
+        line-height: 1.2;
+        text-transform: uppercase;
+  
+        @media (max-width: 768px) {
+          font-size: 1.5rem; /* Smaller font size on smaller screens */
+        }
+      }
+  
+      p {
+        font-size: 1rem;
+        font-style: italic;
+        margin-top: 10px;
+        letter-spacing: 1px;
+  
+        @media (max-width: 768px) {
+          font-size: 0.9rem; /* Adjust font size on smaller screens */
+        }
+      }
+    }
+  
+    .rightImage {
+      width: 300px;
+      height: auto;
+      flex-shrink: 0;
+      border-radius: 8px;
+      object-fit: cover;
+  
+      @media (max-width: 768px) {
+        width: 200px; /* Adjust width on smaller screens */
+      }
+    }
+  }
+  

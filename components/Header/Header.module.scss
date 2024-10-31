@@ -1,0 +1,102 @@
+.header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .icon {
+        font-size: 1.5rem;
+        color: #fff;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    .searchContainer {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 50px;
+        padding: 5px 15px;
+        width: 70vw;
+        /* Set the width to 70% of the viewport */
+        max-width: 800px;
+        /* Optional max width */
+        margin: 20px auto;
+        /* Center align the search container */
+
+        .searchIcon {
+            color: #ff007f;
+            font-size: 1.2rem;
+            margin-right: 8px;
+        }
+
+        .searchInput {
+            border: none;
+            outline: none;
+            width: 100%;
+            padding: 8px;
+            font-size: 1rem;
+            color: #333;
+            background-color: #fff;
+        }
+    }
+
+    .iconContainer {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70vw;
+        /* Set the width to 70% of the viewport */
+        /* Optional max width */
+        margin: 0 auto;
+
+        .dropdownButton {
+            background-color: #444;
+            color: #fff;
+            padding: 6px 15px;
+            border: none;
+            border-radius: 20px;
+            margin-right: 20px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+
+            &:after {
+                content: '▼';
+                font-size: 0.8rem;
+                margin-left: 5px;
+            }
+        }
+
+        .navLinks {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                cursor: pointer;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

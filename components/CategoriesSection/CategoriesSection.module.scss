@@ -1,0 +1,143 @@
+// app/components/CategoriesSection.module.scss
+
+.categoriesSection {
+    text-align: center;
+    padding: 2rem 1rem;
+  
+    .subTitle {
+      font-size: 1rem;
+      letter-spacing: 2px;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+  
+    .title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+  
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+      gap: 1rem;
+    }
+  
+    .categoryCard {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+  
+      &:hover .overlay {
+        opacity: 1;
+      }
+    }
+  
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.4);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      border-radius: 8px;
+    }
+  
+    .categoryName {
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+  
+    /* Featured Categories Section */
+    .featuredGrid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+  
+    .featuredCard {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+      &:hover .featuredOverlay {
+        opacity: 1;
+      }
+    }
+  
+    .featuredImage {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  
+    .featuredOverlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      padding: 1rem;
+      text-align: center;
+    }
+  
+    .featuredTitle {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0;
+      color: #333;
+    }
+  
+    .viewProductsButton {
+      margin-top: 1rem;
+      padding: 0.5rem 1.5rem;
+      font-size: 0.875rem;
+      border: 2px solid #333;
+      background: transparent;
+      color: #333;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+  
+      &:hover {
+        background-color: #333;
+        color: #fff;
+      }
+    }
+  }
+  

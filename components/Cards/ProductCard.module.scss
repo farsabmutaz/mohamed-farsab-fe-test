@@ -1,0 +1,102 @@
+.productCard {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    .imageContainer {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+
+        .productImage {
+            width: 100%;
+            min-height: 40vh;
+            max-height: 40vh;
+            object-fit: cover;
+        }
+
+        .commission {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            background-color: #000;
+            color: #fff;
+            padding: 5px 10px;
+            font-size: 12px;
+            border-radius: 4px;
+        }
+
+        .getPaidLogo {
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .productInfo {
+        padding: 15px;
+        text-align: center;
+
+        .brandName {
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .productTitle {
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 5px 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .options {
+            font-size: 0.8rem;
+            color: #555;
+        }
+
+        .price {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-top: 8px;
+            color: #333;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        gap: 1rem;
+
+        .shelfButton,
+        .bagButton {
+            padding: 20px 20px;
+            font-size: 0.9rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .shelfButton {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        .bagButton {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+}

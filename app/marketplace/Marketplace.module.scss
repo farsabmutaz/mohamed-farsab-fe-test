@@ -1,0 +1,40 @@
+.marketplace {
+    padding: 20px;
+    text-align: center;
+
+    .breadcrumb {
+        font-size: 1rem;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    .itemsGrid {
+        display: grid;
+        gap: 10px;
+        width: 100%;
+        margin: 0 auto;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        height: 550px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.2s ease;
+    }
+
+    .item:hover {
+        transform: scale(1.05);
+    }
+
+    .itemImage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+}

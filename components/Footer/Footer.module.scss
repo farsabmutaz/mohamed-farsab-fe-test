@@ -1,0 +1,114 @@
+// app/components/Footer.module.scss
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    // justify-content: space-around;
+    gap: 2rem;
+    text-align: center;
+
+    .logoSection {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .linksSection {
+        display: flex;
+        gap: 4rem;
+        justify-content: center;
+
+        .linkGroup {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            h4 {
+                font-size: 1rem;
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+            }
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 0.875rem;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .socialSection {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+
+        a {
+            display: inline-flex;
+            width: 36px;
+            height: 36px;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 50%;
+            overflow: hidden;
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    .bottomSection {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5rem;
+        font-size: 0.75rem;
+        width: 100%;
+
+        .legalLinks {
+            display: flex;
+            gap: 2rem;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    // @media (min-width: 768px) {
+    //     flex-direction: row;
+    //     justify-content: space-between;
+    //     align-items: flex-start;
+    //     text-align: left;
+
+    //     .logoSection {
+    //         margin-bottom: 0;
+    //     }
+
+    //     .bottomSection {
+    //         flex-direction: row;
+    //     }
+    // }
+}

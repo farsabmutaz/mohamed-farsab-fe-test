@@ -1,0 +1,39 @@
+.sellerCard {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    .image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 1rem;
+        background: rgba(0, 0, 0, 0.6); // Dark overlay
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sellerName {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+    }
+}
